@@ -508,13 +508,13 @@ class App extends React.Component<any, any> {
                 <h3>Actions</h3>
                 <Column center>
                   <STestButtonContainer>
-                    <STestButton left onClick={this.testSendTransaction}>
+                    {/* <STestButton left onClick={this.testSendTransaction}>
                       {ETH_SEND_TRANSACTION}
                     </STestButton>
 
                     <STestButton left onClick={this.testSignMessage}>
                       {ETH_SIGN}
-                    </STestButton>
+                    </STestButton> */}
 
                     <STestButton left onClick={this.testSignPersonalMessage}>
                       {PERSONAL_SIGN}
@@ -539,7 +539,9 @@ class App extends React.Component<any, any> {
               </SBalances>
             ) : (
               <SLanding center>
-                <h3>{`Test Web3Modal`}</h3>
+                <h2>{`Support your favorite artists ! `}</h2>
+                <h2> {`At Interlude, artists get full control of their work and get directly paid for it `} </h2>
+                <h2>{`Join us !`} </h2>
                 <ConnectButton onClick={this.onConnect} />
               </SLanding>
             )}

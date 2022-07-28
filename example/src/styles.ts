@@ -36,7 +36,8 @@ export const fonts = {
     extrabold: 800,
   },
   family: {
-    OpenSans: '"Open Sans", sans-serif',
+    CormorantSC: '"Cormorant SC", serif',
+    // OpenSans: '"Open Sans", sans-serif',
   },
 };
 
@@ -82,9 +83,7 @@ export const responsive = {
 };
 
 export const globalStyle = `
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800');
-
-  html, body, #root {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');  html, body, #root {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -92,13 +91,13 @@ export const globalStyle = `
   }
 
   body {
-    font-family: ${fonts.family.OpenSans};
+    font-family: ${fonts.family.CormorantSC};
     font-style: normal;
     font-stretch: normal;
     font-weight: ${fonts.weight.normal};
     font-size: ${fonts.size.medium};
-    background-color: rgb(${colors.white});
-    color: rgb(${colors.dark});
+    background-color: rgb(${colors.black});
+    color: rgb(${colors.white});
     overflow-y:auto;
     text-rendering: optimizeLegibility;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
